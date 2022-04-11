@@ -1,0 +1,78 @@
+@font-face {
+    font-family: IRANSansDN;
+    src: url('IRANSansDN_Light.ttf') format('truetype');
+}
+
+body {
+    font-family: IRANSansDN;
+    background: url(./forestbridge.jpg) no-repeat center center / cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.comming {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.comming div h1 {
+    font-size: 62px;
+    position: relative;
+    animation-name: h1com;
+    animation-duration: 1s;
+}
+
+.comming div hr {
+    margin: 30px auto;
+    width: 50%;
+    border-top: 0;
+    animation-name: hrcolor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.comming a {
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.comming a:hover {
+    background-color: rgb(20, 94, 233);
+}
+
+@keyframes h1com {
+    from {
+        bottom: 100px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes hrcolor {
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: blue;
+    }
+}
+
+@media (max-width:454px) {
+    .comming div h1 {
+        font-size: 42px;
+    }
+}
